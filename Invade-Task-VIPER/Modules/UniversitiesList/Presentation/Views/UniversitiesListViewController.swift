@@ -23,6 +23,15 @@ public class UniversitiesListViewController: UIViewController {
 
   // MARK: - Life Cycle
 
+  private func configureActivityIndicator() {
+    activityIndicator = UIActivityIndicatorView(style: .medium)
+    activityIndicator?.center = view.center
+    activityIndicator?.hidesWhenStopped = true
+    if let activityIndicator {
+      view.addSubview(activityIndicator)
+    }
+  }
+
   private func configureTableView() {
     universitiesTableView.dataSource = self
     universitiesTableView.delegate = self
@@ -38,6 +47,7 @@ public class UniversitiesListViewController: UIViewController {
   public
   override func viewDidLoad() {
     super.viewDidLoad()
+    configureActivityIndicator()
     configureTableView()
     dependencies.presenter.viewDidLoad()
   }
@@ -65,10 +75,15 @@ extension UniversitiesListViewController: UniversitiesListPresenterOutput {
   }
 
   func showLoading() {
-
+    DispatchQueue.main.async { [weak self] in
+      self?.activityIndicator?.startAnimating()
+    }
   }
 
   func hideLoading() {
+    DispatchQueue.main.async { [weak self] in
+      self?.activityIndicator?.stopAnimating()
+    }
   }
 }
 
@@ -94,4 +109,7 @@ extension UniversitiesListViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension UniversitiesListViewController: UITableViewDelegate {
+  public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    dependencies.presenter.didSelectItem(at: indexPath)
+  }
 }

@@ -18,15 +18,14 @@ final class UniversitiesListPresenter {
   // MARK: - Properties
   weak var output: UniversitiesListPresenterOutput?
   private let interactor: UniversitiesListInteractorInput
+  private let router: UniversitiesListRouterProtocol
 
   // MARK: - Lifecycle
 
   init(dependencies: UniversitiesListPresenterDependenciesProtocol) {
     interactor = dependencies.interactor
+    router = dependencies.router
   }
-
-  // MARK: - Privates
-
 }
 
 // MARK: - UniversitiesListPresenterInput
@@ -59,19 +58,31 @@ extension UniversitiesListPresenter: UniversitiesListPresenterInput {
       stateProvince: stateProvince
     )
   }
+
+  func didSelectItem(at indexPath: IndexPath) {
+    interactor.goToUniversityDetails(
+      atIndex: indexPath.row,
+      for: indexPath.section
+    )
+  }
 }
 
 // MARK: - UniversitiesListInteractorOutput
 extension UniversitiesListPresenter: UniversitiesListInteractorOutput {
-  func setDefaultValues() {
-  }
-
   func didUpdateTableView() {
     output?.reloadData()
   }
 
+  func goToDetails() {
+    router.routeToDetails()
+  }
+
   func notifyLoading() {
     output?.showLoading()
+  }
+
+  func notifyStopLoading() {
+    output?.hideLoading()
   }
 
   func notifyNoDataError() {

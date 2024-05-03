@@ -21,10 +21,20 @@ class UniversitiesListRouter {
 // MARK: - UniversitiesListRouterProtocol
 
 extension UniversitiesListRouter: UniversitiesListRouterProtocol {
-   func goBack() {
-    self.viewController?.navigationController?.popViewController(animated: true)
+  func routeToDetails() {
+    let dependencies = UniversityDetailsModuleFactoryDependencies(
+      interactorFactory: UniversityDetailsInteractorModuleFactory()
+    )
+    let moduleFactory = UniversityDetailsModuleFactory(dependencies: dependencies)
+    let detailsViewController = moduleFactory.makeView()
+    self.viewController?.navigationController?.pushViewController(
+      detailsViewController,
+      animated: true
+    )
   }
+}
 
-   func routeToDetails() {
-  }
+// MARK: - UniversityDetailsModuleFactoryDependenciesProtocol
+private struct UniversityDetailsModuleFactoryDependencies: UniversityDetailsModuleFactoryDependenciesProtocol {
+  var interactorFactory: UniversityDetailsInteractorModuleFactoryProtocol
 }

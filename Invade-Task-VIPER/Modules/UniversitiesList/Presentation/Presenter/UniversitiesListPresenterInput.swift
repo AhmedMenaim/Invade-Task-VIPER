@@ -13,6 +13,7 @@ protocol UniversitiesListPresenterInput {
   func numberOfSections() -> Int
   func numberOfRows(at section: Int) -> Int
   func viewItem(at indexPath: IndexPath) -> UniversityViewItem?
+  func didSelectItem(at indexPath: IndexPath)
 }
 
 struct UniversityViewItem {

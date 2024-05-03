@@ -9,5 +9,4 @@ import Foundation
 
 public protocol UniversitiesListRouterProtocol {
   func routeToDetails()
-  func goBack()
 }
