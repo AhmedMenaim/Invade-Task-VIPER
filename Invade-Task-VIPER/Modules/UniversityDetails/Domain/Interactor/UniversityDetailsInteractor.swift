@@ -40,7 +40,6 @@ final class UniversityDetailsInteractor {
 // MARK: - UniversityDetailsInteractorInput
 extension UniversityDetailsInteractor: UniversityDetailsInteractorInput {
   func retrieve() {
-    output?.notifyLoading()
     guard
       let university = sharedRepository.get()
     else {

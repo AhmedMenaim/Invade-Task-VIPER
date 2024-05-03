@@ -11,7 +11,6 @@ import Foundation
 
 public protocol UniversityDetailsInteractorOutput: AnyObject {
   func setDefaultValues(with university: UniversityItem)
-  func notifyLoading()
   func notifyNoDataError()
   func goBack()
 }
