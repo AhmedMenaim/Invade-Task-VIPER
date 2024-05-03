@@ -2,7 +2,6 @@
 //  UniversitiesListInteractorModuleFactory.swift
 //  Invade-Task-VIPER
 //
-//  Mobissiweb template version 1.0
 //
 //  Created by Menaim on 02/05/2024.
 //  
@@ -27,13 +26,15 @@ public final class UniversitiesListInteractorModuleFactory: UniversitiesListInte
   public init() {}
 
   // MARK: - UniversitiesListInteractorInput
-
   public func makeResponse(from request: UniversitiesListInteractorModuleFactoryRequestProtocol) -> UniversitiesListInteractorModuleFactoryResponseProtocol {
+    let repository = UniversitiesRepository(
+      client: UniversitiesAPIClient()
+    )
+    let sharedRepository = UniversitySharedRepository.shared
     let dependencies = UniversitiesListInteractorDependencies(
       dataSource: UniversitiesListInteractorDataSource(),
-      repository: UniversitiesRepository(
-        client: UniversitiesAPIClient()
-      )
+      repository: repository,
+      sharedRepository: sharedRepository
     )
     let interactor = UniversitiesListInteractor(dependencies: dependencies)
     self.interactor = interactor
@@ -53,4 +54,5 @@ private struct UniversitiesListInteractorModuleFactoryResponse: UniversitiesList
 private struct UniversitiesListInteractorDependencies: UniversitiesListInteractorDependenciesProtocol {
   let dataSource: UniversitiesListInteractorDataSourceProtocol
   let repository: UniversitiesRepositoryProtocol
+  let sharedRepository: UniversitySharedRepositoryProtocol
 }

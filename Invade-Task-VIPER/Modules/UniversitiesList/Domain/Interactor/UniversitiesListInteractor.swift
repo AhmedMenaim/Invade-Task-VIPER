@@ -2,7 +2,6 @@
 //  UniversitiesListInteractor.swift
 //  Invade-Task-VIPER
 //
-//  Mobissiweb template version 3.0
 //
 //  Created by Menaim on 02/05/2024.
 //
@@ -13,6 +12,7 @@ import Foundation
 protocol UniversitiesListInteractorDependenciesProtocol {
   var dataSource: UniversitiesListInteractorDataSourceProtocol { get }
   var repository: UniversitiesRepositoryProtocol{ get }
+  var sharedRepository: UniversitySharedRepositoryProtocol { get }
 }
 
 final class UniversitiesListInteractor {
@@ -26,17 +26,34 @@ final class UniversitiesListInteractor {
   weak var output: UniversitiesListInteractorOutput?
   private var dataSource: UniversitiesListInteractorDataSourceProtocol
   private var repository: UniversitiesRepositoryProtocol
+  private var sharedRepository: UniversitySharedRepositoryProtocol
   private let mainQueue = DispatchQueue.main
 
   // MARK: - Lifecycle
   init(dependencies: UniversitiesListInteractorDependenciesProtocol) {
     dataSource = dependencies.dataSource
     repository = dependencies.repository
+    sharedRepository = dependencies.sharedRepository
+    addObservers()
   }
 
   deinit {}
 
   // MARK: - Privates
+  private func addObservers() {
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(refreshList),
+      name: Notification.Name("REFRESH"),
+      object: nil
+    )
+  }
+
+  @objc
+  private func refreshList() {
+    retrieve()
+  }
+
   private func notifyNetworkError() {
     mainQueue.async { [weak self] in
       self?.output?.notifyNetworkError()
@@ -76,17 +93,12 @@ final class UniversitiesListInteractor {
       )
     }
     dataSource.universitiesList = universities
-    self.output?.didUpdateTableView()
-    //    if self.dataSource.driverZoneList.count != 0 {
-    //      self.output?.didShowOrHideNoDataView(status: true)
-    //    } else {
-    //      self.output?.didShowOrHideNoDataView(status: false)
-    //    }
+    output?.didUpdateTableView()
+    output?.notifyStopLoading()
   }
 }
 
 // MARK: - UniversitiesListInteractorInput
-
 extension UniversitiesListInteractor: UniversitiesListInteractorInput {
   func retrieve() {
     output?.notifyLoading()
@@ -102,7 +114,6 @@ extension UniversitiesListInteractor: UniversitiesListInteractorInput {
           manageRepositoryFailureError(error)
       }
     }
-    output?.setDefaultValues()
   }
 
   func numberOfCategories() -> Int {
@@ -122,5 +133,10 @@ extension UniversitiesListInteractor: UniversitiesListInteractorInput {
       country: dataSource.universitiesList[index].country,
       alphaTwoCode: dataSource.universitiesList[index].alphaTwoCode
       )
+  }
+
+  func goToUniversityDetails(atIndex index: Int, for categoryIndex: Int) {
+    sharedRepository.save(university: dataSource.universitiesList[index])
+    output?.goToDetails()
   }
 }

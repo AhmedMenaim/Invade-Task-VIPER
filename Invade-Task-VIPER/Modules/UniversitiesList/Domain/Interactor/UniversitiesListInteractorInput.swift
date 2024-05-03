@@ -2,7 +2,6 @@
 //  UniversitiesListInteractorInput.swift
 //  Invade-Task-VIPER
 //
-//  Mobissiweb template version 1.0
 //
 //  Created by Menaim on 02/05/2024.
 //  
@@ -15,7 +14,7 @@ public protocol UniversitiesListInteractorInput {
   func numberOfCategories() -> Int
   func numberOfItems(for categoryIndex: Int) -> Int
   func item(atIndex index: Int, for categoryIndex: Int) -> UniversityItem?
-
+  func goToUniversityDetails(atIndex index: Int, for categoryIndex: Int)
 }
 
 public struct UniversityItem {
