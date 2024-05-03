@@ -50,6 +50,7 @@ extension APIRequestConfiguration {
       do {
         urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
       } catch let error {
+        print(error.localizedDescription)
         throw error
       }
     }
