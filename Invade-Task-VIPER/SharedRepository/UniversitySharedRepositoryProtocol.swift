@@ -16,7 +16,7 @@ public protocol UniversitySharedRepositoryGettable {
 }
 
 public protocol UniversitySharedRepositorySavable {
-  func save(product: UniversityItem)
+  func save(university: UniversityItem)
 }
 
 public protocol UniversitySharedRepositoryClearable {

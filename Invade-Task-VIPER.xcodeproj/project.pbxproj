@@ -12,6 +12,22 @@
 		A20AC4162BE3AB5800F8FE0D /* UniversityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20AC4142BE3AB5800F8FE0D /* UniversityCell.xib */; };
 		A20AC41D2BE3F10F00F8FE0D /* UniversitySharedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC41C2BE3F10F00F8FE0D /* UniversitySharedRepository.swift */; };
 		A20AC41F2BE3F1D500F8FE0D /* UniversitySharedRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC41E2BE3F1D500F8FE0D /* UniversitySharedRepositoryProtocol.swift */; };
+		A20AC43A2BE4023A00F8FE0D /* UniversityDetailsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4232BE4023A00F8FE0D /* UniversityDetailsModuleFactory.swift */; };
+		A20AC43B2BE4023A00F8FE0D /* UniversityDetailsInteractorDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4262BE4023A00F8FE0D /* UniversityDetailsInteractorDataSourceProtocol.swift */; };
+		A20AC43C2BE4023A00F8FE0D /* UniversityDetailsInteractorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4272BE4023A00F8FE0D /* UniversityDetailsInteractorDataSource.swift */; };
+		A20AC43D2BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4292BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactory.swift */; };
+		A20AC43E2BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC42A2BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactoryProtocol.swift */; };
+		A20AC43F2BE4023A00F8FE0D /* UniversityDetailsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC42C2BE4023A00F8FE0D /* UniversityDetailsInteractorInput.swift */; };
+		A20AC4402BE4023A00F8FE0D /* UniversityDetailsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC42D2BE4023A00F8FE0D /* UniversityDetailsInteractorOutput.swift */; };
+		A20AC4412BE4023A00F8FE0D /* UniversityDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC42E2BE4023A00F8FE0D /* UniversityDetailsInteractor.swift */; };
+		A20AC4422BE4023A00F8FE0D /* UniversityDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4312BE4023A00F8FE0D /* UniversityDetailsPresenter.swift */; };
+		A20AC4432BE4023A00F8FE0D /* UniversityDetailsPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4322BE4023A00F8FE0D /* UniversityDetailsPresenterInput.swift */; };
+		A20AC4442BE4023A00F8FE0D /* UniversityDetailsPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4332BE4023A00F8FE0D /* UniversityDetailsPresenterOutput.swift */; };
+		A20AC4472BE4023A00F8FE0D /* UniversityDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4382BE4023A00F8FE0D /* UniversityDetailsRouter.swift */; };
+		A20AC4482BE4023A00F8FE0D /* UniversityDetailsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4392BE4023A00F8FE0D /* UniversityDetailsRouterProtocol.swift */; };
+		A20AC44B2BE4039A00F8FE0D /* UniversityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC4492BE4039A00F8FE0D /* UniversityDetailsViewController.swift */; };
+		A20AC44C2BE4039A00F8FE0D /* UniversityDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20AC44A2BE4039A00F8FE0D /* UniversityDetailsViewController.xib */; };
+		A20AC44E2BE46B6500F8FE0D /* PrintIfDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AC44D2BE46B6500F8FE0D /* PrintIfDebug.swift */; };
 		A2E6735C2BE2F00E0072F667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6735B2BE2F00E0072F667 /* AppDelegate.swift */; };
 		A2E6735E2BE2F00E0072F667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6735D2BE2F00E0072F667 /* SceneDelegate.swift */; };
 		A2E673652BE2F00F0072F667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E673642BE2F00F0072F667 /* Assets.xcassets */; };
@@ -52,6 +68,22 @@
 		A20AC4142BE3AB5800F8FE0D /* UniversityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversityCell.xib; sourceTree = "<group>"; };
 		A20AC41C2BE3F10F00F8FE0D /* UniversitySharedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySharedRepository.swift; sourceTree = "<group>"; };
 		A20AC41E2BE3F1D500F8FE0D /* UniversitySharedRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySharedRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A20AC4232BE4023A00F8FE0D /* UniversityDetailsModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsModuleFactory.swift; sourceTree = "<group>"; };
+		A20AC4262BE4023A00F8FE0D /* UniversityDetailsInteractorDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsInteractorDataSourceProtocol.swift; sourceTree = "<group>"; };
+		A20AC4272BE4023A00F8FE0D /* UniversityDetailsInteractorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsInteractorDataSource.swift; sourceTree = "<group>"; };
+		A20AC4292BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsInteractorModuleFactory.swift; sourceTree = "<group>"; };
+		A20AC42A2BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsInteractorModuleFactoryProtocol.swift; sourceTree = "<group>"; };
+		A20AC42C2BE4023A00F8FE0D /* UniversityDetailsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsInteractorInput.swift; sourceTree = "<group>"; };
+		A20AC42D2BE4023A00F8FE0D /* UniversityDetailsInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsInteractorOutput.swift; sourceTree = "<group>"; };
+		A20AC42E2BE4023A00F8FE0D /* UniversityDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsInteractor.swift; sourceTree = "<group>"; };
+		A20AC4312BE4023A00F8FE0D /* UniversityDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsPresenter.swift; sourceTree = "<group>"; };
+		A20AC4322BE4023A00F8FE0D /* UniversityDetailsPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsPresenterInput.swift; sourceTree = "<group>"; };
+		A20AC4332BE4023A00F8FE0D /* UniversityDetailsPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsPresenterOutput.swift; sourceTree = "<group>"; };
+		A20AC4382BE4023A00F8FE0D /* UniversityDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsRouter.swift; sourceTree = "<group>"; };
+		A20AC4392BE4023A00F8FE0D /* UniversityDetailsRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityDetailsRouterProtocol.swift; sourceTree = "<group>"; };
+		A20AC4492BE4039A00F8FE0D /* UniversityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailsViewController.swift; sourceTree = "<group>"; };
+		A20AC44A2BE4039A00F8FE0D /* UniversityDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversityDetailsViewController.xib; sourceTree = "<group>"; };
+		A20AC44D2BE46B6500F8FE0D /* PrintIfDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintIfDebug.swift; sourceTree = "<group>"; };
 		A2E673582BE2F00E0072F667 /* Invade-Task-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Invade-Task-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6735B2BE2F00E0072F667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E6735D2BE2F00E0072F667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +149,92 @@
 			path = SharedRepository;
 			sourceTree = "<group>";
 		};
+		A20AC4222BE4023A00F8FE0D /* UniversityDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC4232BE4023A00F8FE0D /* UniversityDetailsModuleFactory.swift */,
+				A20AC4242BE4023A00F8FE0D /* Domain */,
+				A20AC42F2BE4023A00F8FE0D /* Presentation */,
+			);
+			path = UniversityDetails;
+			sourceTree = "<group>";
+		};
+		A20AC4242BE4023A00F8FE0D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC4252BE4023A00F8FE0D /* DataSource */,
+				A20AC4282BE4023A00F8FE0D /* InteractorFactory */,
+				A20AC42B2BE4023A00F8FE0D /* Interactor */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A20AC4252BE4023A00F8FE0D /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC4262BE4023A00F8FE0D /* UniversityDetailsInteractorDataSourceProtocol.swift */,
+				A20AC4272BE4023A00F8FE0D /* UniversityDetailsInteractorDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A20AC4282BE4023A00F8FE0D /* InteractorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC4292BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactory.swift */,
+				A20AC42A2BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactoryProtocol.swift */,
+			);
+			path = InteractorFactory;
+			sourceTree = "<group>";
+		};
+		A20AC42B2BE4023A00F8FE0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC42C2BE4023A00F8FE0D /* UniversityDetailsInteractorInput.swift */,
+				A20AC42D2BE4023A00F8FE0D /* UniversityDetailsInteractorOutput.swift */,
+				A20AC42E2BE4023A00F8FE0D /* UniversityDetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A20AC42F2BE4023A00F8FE0D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC4302BE4023A00F8FE0D /* Presenter */,
+				A20AC4342BE4023A00F8FE0D /* Views */,
+				A20AC4372BE4023A00F8FE0D /* Router */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A20AC4302BE4023A00F8FE0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC4312BE4023A00F8FE0D /* UniversityDetailsPresenter.swift */,
+				A20AC4322BE4023A00F8FE0D /* UniversityDetailsPresenterInput.swift */,
+				A20AC4332BE4023A00F8FE0D /* UniversityDetailsPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A20AC4342BE4023A00F8FE0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC4492BE4039A00F8FE0D /* UniversityDetailsViewController.swift */,
+				A20AC44A2BE4039A00F8FE0D /* UniversityDetailsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A20AC4372BE4023A00F8FE0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A20AC4382BE4023A00F8FE0D /* UniversityDetailsRouter.swift */,
+				A20AC4392BE4023A00F8FE0D /* UniversityDetailsRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		A2E6734F2BE2F00E0072F667 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +283,7 @@
 				A2E673752BE2F1A70072F667 /* Dictionary+Extensions.swift */,
 				A20AC4112BE3A8B700F8FE0D /* UITableViewCell+Identifier.swift */,
 				A2E673CC2BE315E70072F667 /* UIViewController+Extension.swift */,
+				A20AC44D2BE46B6500F8FE0D /* PrintIfDebug.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -198,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				A2E673812BE2FD200072F667 /* UniversitiesList */,
+				A20AC4222BE4023A00F8FE0D /* UniversityDetails */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -388,6 +508,7 @@
 			files = (
 				A2E673682BE2F00F0072F667 /* LaunchScreen.storyboard in Resources */,
 				A2E673652BE2F00F0072F667 /* Assets.xcassets in Resources */,
+				A20AC44C2BE4039A00F8FE0D /* UniversityDetailsViewController.xib in Resources */,
 				A20AC4162BE3AB5800F8FE0D /* UniversityCell.xib in Resources */,
 				A2E673CB2BE314BA0072F667 /* UniversitiesListViewController.xib in Resources */,
 			);
@@ -401,13 +522,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2E673892BE2FF250072F667 /* UniversitiesAPIClient.swift in Sources */,
+				A20AC4432BE4023A00F8FE0D /* UniversityDetailsPresenterInput.swift in Sources */,
+				A20AC4442BE4023A00F8FE0D /* UniversityDetailsPresenterOutput.swift in Sources */,
 				A2E673AF2BE310150072F667 /* UniversitiesListInteractorModuleFactory.swift in Sources */,
 				A2E6737A2BE2F8720072F667 /* SessionDataTaskError.swift in Sources */,
 				A2E673B12BE310150072F667 /* UniversitiesListPresenterInput.swift in Sources */,
+				A20AC4422BE4023A00F8FE0D /* UniversityDetailsPresenter.swift in Sources */,
 				A2E673AA2BE310150072F667 /* UniversitiesListInteractorOutput.swift in Sources */,
 				A2E673C52BE312450072F667 /* UniversitiesListRouter.swift in Sources */,
 				A2E673B42BE310150072F667 /* UniversitiesListPresenterOutput.swift in Sources */,
+				A20AC43A2BE4023A00F8FE0D /* UniversityDetailsModuleFactory.swift in Sources */,
 				A2E673842BE2FDA40072F667 /* UniversityNetworkResponse.swift in Sources */,
+				A20AC4482BE4023A00F8FE0D /* UniversityDetailsRouterProtocol.swift in Sources */,
 				A20AC41D2BE3F10F00F8FE0D /* UniversitySharedRepository.swift in Sources */,
 				A2E673712BE2F0C50072F667 /* BaseAPIRequest.swift in Sources */,
 				A2E673CA2BE314BA0072F667 /* UniversitiesListViewController.swift in Sources */,
@@ -416,22 +542,32 @@
 				A2E673C72BE312530072F667 /* UniversitiesListRouterProtocol.swift in Sources */,
 				A2E673B32BE310150072F667 /* UniversitiesListInteractor.swift in Sources */,
 				A2E6738F2BE30B620072F667 /* UniversitiesRepositoryResponse.swift in Sources */,
+				A20AC43B2BE4023A00F8FE0D /* UniversityDetailsInteractorDataSourceProtocol.swift in Sources */,
 				A2E673B62BE310150072F667 /* UniversitiesListInteractorModuleFactoryProtocol.swift in Sources */,
 				A20AC4152BE3AB5800F8FE0D /* UniversityCell.swift in Sources */,
+				A20AC43C2BE4023A00F8FE0D /* UniversityDetailsInteractorDataSource.swift in Sources */,
 				A2E673B72BE310150072F667 /* UniversitiesListModuleFactory.swift in Sources */,
 				A2E673CD2BE315E70072F667 /* UIViewController+Extension.swift in Sources */,
 				A2E673732BE2F0D80072F667 /* APIRequestConfiguration.swift in Sources */,
 				A20AC4122BE3A8B700F8FE0D /* UITableViewCell+Identifier.swift in Sources */,
 				A2E6738D2BE30B160072F667 /* UniversitiesRepositoryProtocol.swift in Sources */,
+				A20AC43D2BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactory.swift in Sources */,
+				A20AC44B2BE4039A00F8FE0D /* UniversityDetailsViewController.swift in Sources */,
+				A20AC44E2BE46B6500F8FE0D /* PrintIfDebug.swift in Sources */,
 				A2E673AB2BE310150072F667 /* UniversitiesListPresenter.swift in Sources */,
 				A2E6735C2BE2F00E0072F667 /* AppDelegate.swift in Sources */,
 				A2E673B22BE310150072F667 /* UniversitiesListInteractorDataSourceProtocol.swift in Sources */,
 				A2E673BB2BE310150072F667 /* UniversitiesListInteractorDataSource.swift in Sources */,
+				A20AC4472BE4023A00F8FE0D /* UniversityDetailsRouter.swift in Sources */,
+				A20AC43F2BE4023A00F8FE0D /* UniversityDetailsInteractorInput.swift in Sources */,
 				A2E673AD2BE310150072F667 /* UniversitiesListInteractorInput.swift in Sources */,
 				A20AC41F2BE3F1D500F8FE0D /* UniversitySharedRepositoryProtocol.swift in Sources */,
 				A2E6735E2BE2F00E0072F667 /* SceneDelegate.swift in Sources */,
+				A20AC43E2BE4023A00F8FE0D /* UniversityDetailsInteractorModuleFactoryProtocol.swift in Sources */,
 				A2E673862BE2FE790072F667 /* UniversitiesAPIRequest.swift in Sources */,
 				A2E673762BE2F1A70072F667 /* Dictionary+Extensions.swift in Sources */,
+				A20AC4412BE4023A00F8FE0D /* UniversityDetailsInteractor.swift in Sources */,
+				A20AC4402BE4023A00F8FE0D /* UniversityDetailsInteractorOutput.swift in Sources */,
 				A2E673932BE30C9E0072F667 /* UniversitiesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,8 @@
 import Foundation
 
 public class UniversitySharedRepository {
-  // MARK: - Properties
 
+  // MARK: - Properties
   private var university: UniversityItem?
 
   // MARK: - Singleton
@@ -26,7 +26,7 @@ extension UniversitySharedRepository: UniversitySharedRepositoryProtocol {
     UniversitySharedRepository.shared.university
   }
 
-  public func save(product: UniversityItem) {
+  public func save(university: UniversityItem) {
     UniversitySharedRepository.shared.university = university
   }
 
